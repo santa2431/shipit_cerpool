@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Ride Page</title>
+	<link href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet"
+    type="text/css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel = "stylesheet" href = "newregister_page.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+  <header class="w3-container w3-theme w3-padding-24" id="myHeader">
+  <div class="w3-center">
+	<a href="welcome.html">
+            <img class="w3-left" style="border-radius: 50%; box-shadow: 0px 0px 5px 1px grey;max-width: auto; height: auto;" src="logo.jpg" alt="" width="100" height="100">
+			</a>
+	<div class="w3-dropdown-hover w3-right">
+        <button class=" w3-theme w3-button fa fa-bars w3-xxlarge"></button>
+        <div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+          <a href="available_rides.html" class="w3-bar-item w3-button">My rides</a>
+          <a href="payment.html" class="w3-bar-item w3-button">Payment</a>
+          <a href="rewards.html" class="w3-bar-item w3-button">Rewards</a>
+          <a href="login_page.html" class="w3-bar-item w3-button">Logout</a>
+        </div>
+      </div>
+        <div class="w3-right w3-bar">
+            <h3 class = "w3-bar-item" id= "username">Guest</h3>
+            <i class="w3-bar-item  fa fas fa-user w3-xxlarge w3-button w3-theme"></i>
+          </div>
+</div>	
+  </header>
+  <div class="w3-container w3-margin">
+  <div class="w3-container w3-card  w3-third">
+
+  </div>
+	 <div class="main">
+        <h2>Create your ride here...</h2>
+        <div class="card1"> 
+            <div class="card-body"> 
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Date</td>
+                            <td>:</td>
+                            <td><input class="w3-input w3-border" type="text" id="date_picker" name="datepick"> </td>
+							<script language="javascript">
+								$(document).ready(function () {
+									$("#date_picker").datepicker({
+										minDate: 0
+									});
+								});
+							</script>
+                        </tr>
+                        <tr>
+                            <td>PickUp Location</td>
+                            <td>:</td>
+                            <td>
+							<select class="w3-input w3-border" type="text" name="Location" id="Location">
+							  <option value="Northgate">Northgate</option>
+							  <option value="H2BlockManyata">H2 Block Manyata</option>
+							</select>
+							</td>
+                        </tr>
+                        <tr>
+                            <td>Ride Type</td>
+                            <td>:</td>
+                            <td><select class="w3-input w3-border" type="text" name="ridetype" id="ridetype">
+							  <option value="4wheeler">4 wheeler</option>
+							  <option value="2wheeler">2 wheeler</option>
+							</select></td>
+                        </tr>
+                        <tr>
+                            <td>No of seats available</td>
+                            <td>:</td>
+                            <td><input class="w3-input w3-border" type="text" id="seats" name="seats"></td>
+                        </tr>
+						<tr>
+                            <td>Price</td>
+                            <td>:</td>
+                            <td><input class="w3-input w3-border" type="text" id="Price" name="Price"></td>
+                        </tr>
+						<tr>
+							<td><button class="button button1" type="Submit">Submit</button></td>
+						</tr>
+                    </tbody>
+                </table>
+           </div> 
+       </div> 
+    <div class="w3-container w3-card  w3-third ">
+    </div>
+  </div>
+  <footer class="w3-container w3-theme">
+        <p>About</p>
+        <p>Contact us </p>
+        <p>Support </p>
+        <p>Social media</p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+          <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;  
+          <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+        <p></p>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rides</title>
+    <link rel = "stylesheet" href = "register_page.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    .buttonload {
+  background-color: #04AA6D; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px /* Set a font size */
+}
+
+</style>
+<body>
+  <header class="w3-container w3-theme w3-padding-24" id="myHeader">
+  <div class="w3-center">
+	<a href="welcome.html">
+            <img class="w3-left" style="border-radius: 50%; box-shadow: 0px 0px 5px 1px grey;max-width: auto; height: auto;" src="logo.jpg" alt="" width="100" height="100">
+			</a>
+	<div class="w3-dropdown-hover w3-right">
+        <button class=" w3-theme w3-button fa fa-bars w3-xxlarge"></button>
+        <div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+          <a href="available_rides.html" class="w3-bar-item w3-button">My rides</a>
+          <a href="payment.html" class="w3-bar-item w3-button">Payment</a>
+          <a href="rewards.html" class="w3-bar-item w3-button">Rewards</a>
+          <a href="login_page.html" class="w3-bar-item w3-button">Logout</a>
+        </div>
+      </div>
+        <div class="w3-right w3-bar">
+            <h3 class = "w3-bar-item" id= "username">Guest</h3>
+            <i class="w3-bar-item  fa fas fa-user w3-xxlarge w3-button w3-theme"></i>
+          </div>
+</div>	
+  </header>
+  <div class="w3-container w3-margin">
+  <div class="w3-container w3-card  w3-third">
+
+  </div>
+  <div class="w3-container w3-third ">
+
+          <div class="container">
+            <h1>Welcome to Rides</h1>
+            <!-- Add icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Add font awesome icons to buttons (note that the fa-spin class rotates the icon) -->
+            <button class="buttonload" id="box">
+            <i class="fa fa-spinner fa-spin"></i>Loading
+            </button>
+            
+            <script >
+                setTimeout(() => {
+                const box = document.getElementById('box');
+
+                // 👇️ removes element from DOM
+                box.style.display = 'none';
+
+                // 👇️ hides element (still takes up space on page)
+                // box.style.visibility = 'hidden';
+                }, 10000); // 👈️ time in milliseconds
+            </script>
+          </div>
+          <script>
+            var ride = 0
+            
+          </script>
+  
+    </div> 
+    <div class="w3-container w3-card  w3-third ">
+    </div>
+  </div>
+  <footer class="w3-container w3-theme">
+        <p>About</p>
+        <p>Contact us </p>
+        <p>Support </p>
+        <p>Social media</p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+          <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;  
+          <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+        <p></p>
+      </footer>
+</body>
+</html>

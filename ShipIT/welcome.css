@@ -1,0 +1,20 @@
+.btn {
+    background-color:white; /* Blue background */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+/* Logo */
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+
+
+.profile img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px grey;
+	max-width: auto;
+	height: auto;
+}
