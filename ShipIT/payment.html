@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel = "stylesheet" src="welcome.css">
+    <script src="welcome.js" defer ></script>
+</head>
+<body>
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+<div class="w3-center">
+	<a href="welcome.html">
+            <img class="w3-left" style="border-radius: 50%; box-shadow: 0px 0px 5px 1px grey;max-width: auto; height: auto;" src="logo.jpg" alt="" width="100" height="100">
+			</a>
+	<div class="w3-dropdown-hover w3-right">
+        <button class=" w3-theme w3-button fa fa-bars w3-xxlarge"></button>
+        <div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+          <a href="available_rides.html" class="w3-bar-item w3-button">My rides</a>
+          <a href="payment.html" class="w3-bar-item w3-button">Payment</a>
+          <a href="rewards.html" class="w3-bar-item w3-button">Rewards</a>
+          <a href="login_page.html" class="w3-bar-item w3-button">Logout</a>
+        </div>
+      </div>
+        <div class="w3-right w3-bar">
+            <h3 class = "w3-bar-item" id= "username">Guest</h3>
+            <i class="w3-bar-item  fa fas fa-user w3-xxlarge w3-button w3-theme"></i>
+          </div>
+</div>	
+</header>
+<div class= "w3-container" style="min-height:400px" id="piechart">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['You are owed', 120],
+  ['You owe', 80],
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Your payment split', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+<h3> You owe Rs 80</h3>
+<h3>You are owed rs 120</h3>
+</div>
+
+<footer class="w3-container w3-theme">
+  <p>About</p>
+  <p>Contact us </p>
+  <p>Support </p>
+  <p>Social media</p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;   
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p></p>
+</footer>
+</body>
+</html>
